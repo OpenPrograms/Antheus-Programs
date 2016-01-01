@@ -10,7 +10,6 @@ local event = require("event") -- Get the event API
 local serial = require("serialization") --Get the serialization API
 local component = require("component") -- Get the component API
 local term = require ("term") -- Get the term API
-local gpu = require("gpu") -- Get the GPU API
 local io = require("io") -- Get the IO API
 local internet = require("internet")
 local wget = loadfile("/bin/wget")
@@ -18,6 +17,7 @@ local wget = loadfile("/bin/wget")
 --Components
 local modem = component.modem --Modem
 local data = component.data --Data Card
+local gpu = component.gpu --GPU
 
 --Config
 local version = "0.0.1"
