@@ -118,4 +118,10 @@ function m.readFile(loc)
     return t
 end
 
+function m.log(data, loc) -- Loc is location of logfile
+    local f = fs.open(loc, "a")
+    f:write(data)
+    f:close()
+    return true
+end
 return m
