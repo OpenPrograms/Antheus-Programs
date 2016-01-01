@@ -16,7 +16,7 @@ local wget = loadfile("/bin/wget")
 
 --Components
 local modem = component.modem--Modem
-local data = component.data --Data Card
+--local data = component.data --Data Card
 local gpu = component.gpu --GPU
 
 --Config
@@ -29,7 +29,7 @@ if component.isAvailable("internet") then
 end
 
 if component.isAvailable("data") then
-    data = true
+    data = component.data
 end
 
 --Local Functions
