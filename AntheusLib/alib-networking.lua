@@ -1,5 +1,5 @@
 --Antheus Networking Library
-local version = "0.0.1"
+local version = "0.0.2"
 
 local alib = require("alib-base")
 local component = require("component")
