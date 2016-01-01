@@ -15,9 +15,9 @@ local internet = require("internet")
 local wget = loadfile("/bin/wget")
 
 --Components
-local modem = component.modem --Modem
-local data = component.data --Data Card
-local gpu = component.gpu --GPU
+local modem = component.modem or nil--Modem
+local data = component.data or nil--Data Card
+local gpu = component.gpu or nil--GPU
 
 --Config
 local version = "0.0.1"
