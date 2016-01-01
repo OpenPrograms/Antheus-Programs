@@ -28,9 +28,9 @@ if component.isAvailable("internet") then
     internet = true
 end
 
-if component.isAvailable("data") then
-    data = component.data
-end
+--if component.isAvailable("data") then
+--    data = component.data
+--end
 
 --Local Functions
 local function downloadRaw(url)
