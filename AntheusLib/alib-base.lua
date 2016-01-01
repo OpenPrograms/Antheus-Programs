@@ -1,4 +1,4 @@
---[[Antheus Library: The library for all my programs. Feel free to use
+--[[Antheus Library-Base : The library for all my programs. Feel free to use
 this in your own programs or even base your library off of it!
 Inspired from SuPeRMiNoR1's Superlib
 https://github.com/OpenPrograms/SuPeRMiNoR2-Programs/blob/master/superlib/superlib.lua]]
@@ -124,4 +124,5 @@ function m.log(data, loc) -- Loc is location of logfile
     f:close()
     return true
 end
+
 return m
