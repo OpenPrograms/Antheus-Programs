@@ -1,6 +1,6 @@
 --[[Antheus Library-Base : The library for all my programs. Feel free to use
 this in your own programs or even base your library off of it!
-Inspired from SuPeRMiNoR1's Superlib
+Inspired from SuPeRMiNoR2's Superlib
 https://github.com/OpenPrograms/SuPeRMiNoR2-Programs/blob/master/superlib/superlib.lua]]
 
 --Required Stuff:
