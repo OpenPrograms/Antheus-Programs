@@ -13,15 +13,13 @@ function m.lookup(host)
     modem.broadcast(22, "LOOKUP", host)
     while true do
         local _, _, from, p, type, msg = event.pull("modem_mesage")
-        
         if type == "LOOKUPR" and msg == host then
             return from
         end
-        
         return from
     end
-    return from
     modem.close(22)
+    return from
 end
 
 function m.sendFile(to, loc)
