@@ -120,7 +120,7 @@ end
 
 function m.log(data, loc) -- Loc is location of logfile
     f = fs.open(loc, "a")
-    f:write(data)
+    f:write(os.date.." "..data)
     f:close()
     return true
 end
