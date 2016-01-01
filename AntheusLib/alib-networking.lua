@@ -13,7 +13,7 @@ function m.lookup(host)
     modem.broadcast(22, "LOOKUP", host)
     while true do
         local _, _, from, p, type, msg = event.pull("modem_mesage")
-        if type = "LOOKUPR" and msg = host then
+        if type = "LOOKUPR" and msg = host do
             return from
         end
         return from
@@ -35,7 +35,7 @@ function m.recieveFile(loc)
     modem.open(22)
     while true do
         local _, _, from, p, type, msg = event.pull("modem_message")
-        if type = "FILE" then
+        if type = "FILE" do
             local t = alib.decode(msg)
             alib.writeFile(t, loc)
         end
