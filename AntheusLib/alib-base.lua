@@ -5,8 +5,6 @@ https://github.com/OpenPrograms/SuPeRMiNoR2-Programs/blob/master/superlib/superl
 
 --Required Stuff:
 local fs = require("filesystem") -- Get the filesystem API
-local cp = require("computer") -- Get the computer API
-local event = require("event") -- Get the event API
 local serial = require("serialization") --Get the serialization API
 local component = require("component") -- Get the component API
 local term = require ("term") -- Get the term API
@@ -14,13 +12,9 @@ local io = require("io") -- Get the IO API
 local internet = require("internet")
 local wget = loadfile("/bin/wget")
 
---Components
-local modem = component.modem--Modem
---local data = component.data --Data Card
-local gpu = component.gpu --GPU
 
 --Config
-local version = "0.0.3"
+local version = "0.1.0"
 local m = {} -- Brace yourself, it's getting real
 
 --Setup stuffs
@@ -28,9 +22,6 @@ if component.isAvailable("internet") then
     internet = true
 end
 
---if component.isAvailable("data") then
---    data = component.data
---end
 
 --Local Functions
 local function downloadRaw(url)
