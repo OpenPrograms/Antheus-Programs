@@ -20,7 +20,7 @@ local modem = component.modem--Modem
 local gpu = component.gpu --GPU
 
 --Config
-local version = "0.0.2"
+local version = "0.0.3"
 local m = {} -- Brace yourself, it's getting real
 
 --Setup stuffs
@@ -105,7 +105,7 @@ function m.encode(data)
 end
 
 function m.writeFile(data, loc)
-    local f = fs.open(loc, "w")
+    f = fs.open(loc, "w")
     f:write(data)
     f:close()
     return true
@@ -119,7 +119,7 @@ function m.readFile(loc)
 end
 
 function m.log(data, loc) -- Loc is location of logfile
-    local f = fs.open(loc, "a")
+    f = fs.open(loc, "a")
     f:write(data)
     f:close()
     return true
