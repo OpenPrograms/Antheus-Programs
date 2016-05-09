@@ -1,13 +1,5 @@
 -- Derived from SuPeRMiNoR2's DNS program
 -- https://github.com/OpenPrograms/SuPeRMiNoR2-Programs/blob/master/networking/dns.lua
---[[
-
-TODO List:
-    add support for TLD's
-    add support for domains and whatnot
-
-]]
-
 
 -- Config Options
 local port = 16
